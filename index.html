@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Specificity</h1>
+      <strong>Specificity</strong> determines which CSS styles should be applies
+      to an HTML element when conflicting styles are defineed.
+    </header>
+    <br />
+    <main>
+      <strong><h2>What factors influence specificity?</h2></strong>
+      <strong><h3>Location (from most to least specific)</h3></strong>
+      <!-- <h3>Location (from most to least specific)</h3> -->
+      <!-- <h3><strong>Location (from most to least specific)</strong></h3> -->
+      <!-- <h3><b>Location (from most to least specific)</b></h3> -->
+      <!-- all of these look the same and don't seem to change bold at all -->
+      <ul>
+        <li>Inline (in the HTML element)</li>
+        <li>Internal (in the HTML &lt;head&gt)</li>
+        <!-- <li>Internal (in the HTML <code><head></code>)</li> -->
+        <!-- code element didnt work -->
+        <li>External (stylesheet)</li>
+      </ul>
+
+      <strong><h3>Selector (from most to least specific)</h3></strong>
+      <ul>
+        <li>ID</li>
+        <li>Class</li>
+        <li>Tag name</li>
+      </ul>
+      <h2><b>Order</b></h2>
+      Styles defined lower in the document override styles defined above.
+    </main>
+  </body>
+</html>
